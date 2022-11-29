@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-<?php 
+    <?php
 
-$x = "outside"; // global
+    $x = "outside"; // global
 
-function convert() {
-global $x;
-$x = "inside"; // local 
+    function convert()
+    {
+        global $x;
+        $x = "inside"; // local 
 
-}
+    }
 
 
-echo $x;
+    echo $x;
 
-echo "<br>";
+    echo "<br>";
 
-convert();
+    convert();
 
-echo $x;
+    echo $x;
 
-echo $x;
+    echo $x;
 
-    
-    
-?>
+
+
+    ?>
 
 </body>
+
 </html>
