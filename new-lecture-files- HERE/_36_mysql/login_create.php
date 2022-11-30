@@ -2,7 +2,7 @@
 <?php include "functions.php" ?>
 <?php createRows(); ?>
 
-<?php include "includes/header.php" ?>
+<?php include "_includes/header.php" ?>
 
 <div class="container">
     
