@@ -25,4 +25,4 @@
     </div>
 
 
-<?php include "includes/footer.php"?>
+<?php include "_includes/footer.php"?>

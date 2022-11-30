@@ -3,7 +3,7 @@
 
 <?php UpdateTable();?>
 
-<?php include "includes/header.php" ?>
+<?php include "_includes/header.php" ?>
 
 <div class="container">
     
@@ -38,4 +38,4 @@
     </div>
 
 
-<?php include "includes/footer.php"?>
+<?php include "_includes/footer.php"?>
