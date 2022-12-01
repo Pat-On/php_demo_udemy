@@ -1,6 +1,6 @@
 <?php
-
-print_r($_GET);
+// http://localhost/demo/new-lecture-files-%20HERE/57_get.php?id=10&source=reports
+print_r($_GET); // super Global
 echo "<br/>";
 
 
@@ -27,7 +27,9 @@ echo "<br/>";
     ?>
 
 
-    <a href="57_get.php?id=<?php echo $id; ?>"><?php echo $button; ?></a>
+    <a href="57_get.php?id=<?php echo $id; ?>">
+        <?php echo $button; ?>
+    </a>
 
 
 

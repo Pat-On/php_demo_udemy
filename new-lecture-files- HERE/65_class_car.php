@@ -1,26 +1,13 @@
-<?php 
+<?php
 
-class Car {
-    
-    
-    
-    
-
-
+class Car
+{
 }
 
-if(class_exists("Car")) {
+if (class_exists("Car")) {
 
-echo "YEayyyyyyyyy Nice";
-
+    echo "YEayyyyyyyyy Nice";
 } else {
 
-echo "no";
-
+    echo "no";
 }
-
-
-
-
-
-?>
