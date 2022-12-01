@@ -17,7 +17,8 @@ class Car
 $bmw = new Car();
 
 //$bmw->wheels;
-// syntax to call static method
-Car::MoveWheels();
 
-//echo Car::$wheels;
+// Car::MoveWheels();
+
+// syntax to call static method
+echo Car::$wheels;
