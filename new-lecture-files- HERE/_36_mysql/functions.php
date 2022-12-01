@@ -11,6 +11,8 @@ function createRows()
         $username = $_POST['username'];
         $password = $_POST['password'];
 
+        // sanitization in the PHP
+        // mysqli_real_escape_string(connection, escapestring)
         $username = mysqli_real_escape_string($connection, $username);
         $password = mysqli_real_escape_string($connection, $password);
 

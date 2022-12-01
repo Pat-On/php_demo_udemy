@@ -17,6 +17,8 @@
 	
 	<?php  
 
+
+
 	/*  Step 1 -Make a variable with some text as value
 
 		Step 2 - Use crypt() function to encrypt it
@@ -26,7 +28,11 @@
 		Step 4 - echo the variable
 
 	*/
-	
+		$password = "mysecretpassword";
+		$salt = "mysuppersalt";
+		$password_encrypted = crypt($password, $salt);
+
+		echo $password_encrypted;
 	?>
 
 
