@@ -24,4 +24,3 @@ $bmw = new Car();
 $truck = new Car();
 
 $semi = new Car();
-?>

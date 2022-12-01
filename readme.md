@@ -12,7 +12,7 @@ https://www.php.net/download-docs.php
 ### Super Globals
 https://www.php.net/manual/en/language.variables.superglobals.php
 
-Several predefined variables in PHP are "superglobals", which means they are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.
+Several predefined variables in PHP are "super-globals", which means they are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.
 
         $GLOBALS
         $_SERVER

@@ -10,14 +10,14 @@ class Car {
   
     function MoveWheels(){
     
-      $this->wheels = 10;
+      $this->wheels = $this->wheels + 10;
         
     
     } 
     
     
-    function CreateDoors(){
-    
+    function CreateDoors($something){
+      echo $something;
       $this->doors = 6;
         
     
@@ -27,11 +27,16 @@ class Car {
 
 $bmw = new Car();
 $truck = new Car();
-echo $bmw->wheels . "<br>";
 
-echo $truck->wheels = 10 . "<br>";
-$truck->CreateDoors();
-echo $truck->doors;
+echo "BMW wheels: " . $bmw->wheels . "<br>";
+$bmw->MoveWheels();
+echo "BMW wheels: " . $bmw->wheels . "<br>";
+$bmw->MoveWheels();
+echo "BMW wheels: " . $bmw->wheels . "<br>";
 
 
-?>
+echo "Truck wheels: " . $truck->wheels = 10 . "<br>";
+
+// calling methods of truck instance (funny syntax :>)
+$truck->CreateDoors("boom <br>");
+echo "Truck doors: " . $truck->doors;

@@ -44,7 +44,3 @@ echo $jet->wheels;
 //    echo "it does";
 //
 //}
-
-
-
-?>
