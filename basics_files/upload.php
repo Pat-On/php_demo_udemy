@@ -11,40 +11,33 @@ $upload_errors = array(
     UPLOAD_ERR_EXTENSION    => "A PHP extension stopped the file upload."
 );
 
-// moving images
-$temp_name = $_FILES['file_upload']["tmp_name"];
-$the_file = $_FILES['file_upload']["name"];
-
-$directory = "uploads";
-
-$upload_status = move_uploaded_file($temp_name, $directory . "/" . $the_file);
-
-if ($upload_status) {
-    // success
-} else {
-    // error
-}
-
-
-
-
-
-
 // error - loop
 $the_message = "";
+
+
 if (isset($_POST["submit"])) {
 
     print_r($_FILES["file_upload"]);
 
-    $the_error = $_FILES['file_upload']["error"];
 
-    $the_message =  $upload_errors[$the_error];
+    // moving images
+    $temp_name = $_FILES['file_upload']["tmp_name"];
+    $the_file = $_FILES['file_upload']["name"];
+
+    $directory = "uploads";
+
+    $upload_status = move_uploaded_file($temp_name, $directory . "/" . $the_file);
+
+    if ($upload_status) {
+        // success
+        $the_message =  "SUCCESS";
+    } else {
+        // error
+        $the_error = $_FILES['file_upload']["error"];
+
+        $the_message =  $upload_errors[$the_error];
+    }
 }
-
-
-
-
-
 
 
 ?>
